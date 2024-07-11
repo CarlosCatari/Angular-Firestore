@@ -1,0 +1,20 @@
+<div class="card">
+    <div class="card-header">
+        Agregar Producto
+    </div>
+    <div class="card-body">
+        <form (ngSubmit)="addProduct()">
+            <div class="form-group mt-2">
+                <input class="form-control" type="text" placeholder="Producto" name="name" [(ngModel)]="product.name">
+            </div>
+            <div class="form-group mt-2">
+                <input class="form-control" type="text" placeholder="Descripcion" name="description" [(ngModel)]="product.description">
+            </div>
+            <div class="form-group mt-2">
+                <input class="form-control" type="text" placeholder="Precio" name="price" [(ngModel)]="product.price">
+            </div>
+        
+            <button class="btn btn-primary btn-block mt-2 w-100" type="submit">Guardar</button>
+        </form>
+    </div>
+</div>
